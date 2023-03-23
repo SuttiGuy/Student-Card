@@ -1,0 +1,206 @@
+:root {
+    font-size: 24px;
+  }
+  
+  body {
+    background: #cc14c3;
+    /* fallback for old browsers */
+    background: linear-gradient(to left, #932885, #d219cf);
+    height: 100vh;
+    font-family: "Josefin Sans", sans-serif;
+  }
+  
+  /* Background circles start */
+  .circle {
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(#b000b3, #f629c6);
+  }
+  .circles {
+    position: absolute;
+    height: 270px;
+    width: 450px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .circle-1 {
+    height: 180px;
+    width: 180px;
+    top: -50px;
+    left: -60px;
+  }
+  .circle-2 {
+    height: 200px;
+    width: 200px;
+    bottom: -90px;
+    right: -90px;
+    opacity: 0.8;
+  }
+  /* Background circles end */
+  
+  .card-group {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .card {
+    position: relative;
+    height: 270px;
+    width: 450px;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(30px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+  
+
+  
+  .logo img,
+  .chip img,
+  .number,
+  .img1,
+  .name,
+  .name1,
+  .name2,
+  .name3,
+  .name4,
+  .name5,
+  .name9,
+  .from,
+  .to,
+  .ring {
+    position: absolute; /* All items inside card should have absolute position */
+  }
+  
+  .logo img {
+    bottom: 35px;
+    right: 40px;
+    width: 80px;
+    height: auto;
+    opacity: 0.8;
+  }
+
+  
+  
+  .chip img {
+    top: 120px;
+    left: 40px;
+    width: 50px;
+    height: auto;
+    opacity: 0.8;
+  }
+  
+  .img1,
+  .number,
+  .name,
+  .name1,
+  .name2,
+  .name3,
+  .name4,
+  .name5,
+  .name9,
+  .from,
+  .to {
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+  }
+  
+  .number {
+    left: 40px;
+    bottom: 85px;
+    font-family: "Nunito", sans-serif;
+  }
+
+  .img1 {
+    top: 60px;
+    left: 340px;
+    width: 80px;
+    height: auto;
+    opacity: 0.8;
+  }
+  
+  .name {
+    font-size: 0.5rem;
+    left: 60px;
+    top: 60px;
+  }
+
+  .name1 {
+    font-size: 0.5rem;
+    left: 60px;
+    top: 100px;
+  }
+
+  .name2 {
+    font-size: 0.5rem;
+    left: 60px;
+    top: 80px;
+  }
+
+  .name3 {
+    font-size: 0.5rem;
+    left: 60px;
+    top: 120px;
+  }
+
+  .name4 {
+    font-size: 0.5rem;
+    left: 200px;
+    top: 120px;
+  }
+
+  .name5 {
+    font-size: 0.5rem;
+    left: 60px;
+    top: 140px;
+  }
+
+  .name9 {
+    font-size: 0.5rem;
+    left: 40px;
+    bottom: 35px;
+  }
+  
+  .from {
+    font-size: 0.5rem;
+    bottom: 60px;
+    right: 250px;
+  }
+  
+  .to {
+    font-size: 0.5rem;
+    bottom: 60px;
+    right: 200px;
+  }
+  
+  /* The two rings on the card background */
+  .ring {
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    background: transparent;
+    border: 50px solid rgba(255, 255, 255, 0.1);
+    bottom: -230px;
+    right: -50px;
+    box-sizing: border-box;
+  }
+  
+  .ring::after {
+    content: "";
+    position: absolute;
+    height: 600px;
+    width: 600px;
+    border-radius: 50%;
+    background: transparent;
+    border: 30px solid rgba(255, 255, 255, 0.1);
+    bottom: -80px;
+    right: -110px;
+    box-sizing: border-box;
+  }
